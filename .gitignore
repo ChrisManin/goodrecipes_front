@@ -1,0 +1,23 @@
+# Nuxt
+.nuxt/
+.output/
+.data/
+dist/
+
+# Dépendances
+node_modules/
+
+# Environnement (ne jamais commiter les valeurs réelles)
+.env
+*.env.local
+
+# Lockfile npm (on utilise yarn)
+package-lock.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
