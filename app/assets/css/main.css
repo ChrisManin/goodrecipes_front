@@ -3,6 +3,8 @@
 @theme {
   /* Couleurs */
   --color-light-bg: #f6f5f3;
+  --color-dark-bg: #272728;
+  --color-secondary-dark-bg: #313133;
   --color-white: #ffffff;
   --color-dark-text: #1a1919;
   --color-secondary-dark-text: #656360;

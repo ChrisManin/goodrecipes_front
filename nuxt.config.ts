@@ -7,6 +7,12 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
 
+  modules: ['@nuxtjs/device', '@pinia/nuxt'],
+
+  components: [
+    { path: '~/components', pathPrefix: false }
+  ],
+
   css: ['~/assets/css/main.css'],
 
   vite: {

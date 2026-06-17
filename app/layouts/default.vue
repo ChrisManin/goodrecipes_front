@@ -1,6 +1,7 @@
 <template>
   <div class="layout flex flex-col justify-center">
-    <main class="page-container-y mt-16.25 desktop:mt-[135px]">
+    <Header/>
+    <main class="page-container-y mt-16.25 desktop:mt-33.75">
       <slot/>
     </main>
   </div>
