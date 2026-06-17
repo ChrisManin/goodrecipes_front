@@ -2,10 +2,18 @@
 
 @theme {
   /* Couleurs */
-  --color-primary-bg: #F6F5F4;
+  --color-light-bg: #f6f5f3;
+  --color-white: #ffffff;
+  --color-dark-text: #1a1919;
+  --color-secondary-dark-text: #656360;
+  --color-primary: #c039e5;
+  --color-secondary: #7a139a;
+  --color-success: #00dc82;
+
 
   /* Breakpoints */
   --breakpoint-mobile: 576px;
+  --breakpoint-tablet: 760px;
   --breakpoint-desktop: 1024px;
 }
 
