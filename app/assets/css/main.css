@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  /* Couleurs */
+  --color-primary-bg: #F6F5F4;
+
+  /* Breakpoints */
+  --breakpoint-mobile: 576px;
+  --breakpoint-desktop: 1024px;
+}
+
+@layer components {
+  .page-container-y {
+    @apply w-full mx-auto max-w-[100vw] desktop:max-w-7xl flex flex-col self-center px-0 desktop:px-2 overflow-hidden desktop:overflow-visible;
+  }
+}
