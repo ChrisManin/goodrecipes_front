@@ -8,7 +8,7 @@
       <span class="submenu-button-title text-primary">Recettes rapides</span>
     </nuxt-link>
 
-    <nuxt-link to="/top-podcasts" 
+    <nuxt-link to="/menus" 
       class="flex items-center submenu-button"
       :tabindex="headerStore.keyboardFocusableMenuItems ? 0 : -1"
     >
