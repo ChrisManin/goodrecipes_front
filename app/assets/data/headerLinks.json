@@ -1,0 +1,45 @@
+{
+  "categories": {
+    "title": "Recettes par catégorie",
+    "items": [
+      { "title": "Barbecue", "url": "/barbecue" },
+      { "title": "Estivale", "url": "/estivale" },
+      { "title": "Festif", "url": "/festif" },
+      { "title": "Perte de poids", "url": "/perte-de-poids" },
+      { "title": "Prise de masse", "url": "/prise-de-masse" },
+      { "title": "Quotidien", "url": "/quotidien" },
+      { "title": "Soirée", "url": "/soirée" },
+      { "title": "Vegan", "url": "/vegan" }
+    ]
+  },
+  "types": {
+    "title": "Recettes par type",
+    "items": [
+      { "title": "Apéritif", "url": "/aperitif" },
+      { "title": "Collation", "url": "/collation" },
+      { "title": "Dessert", "url": "/dessert" },
+      { "title": "Entrée", "url": "/entree" },
+      { "title": "Petit déjeuner", "url": "/petit-dejeuner" },
+      { "title": "Plat", "url": "/plat-de-resistance" }
+    ]
+  },
+  "difficulties": {
+    "title": "Recettes par niveau de difficulté",
+    "items": [
+      { "title": "Très facile", "url": "/tres-facile" },
+      { "title": "Facile", "url": "/facile" },
+      { "title": "Intermédiaire", "url": "/intermediaire" },
+      { "title": "Difficile", "url": "/difficile" },
+      { "title": "Challenge", "url": "/challenge" }
+    ]
+  },
+  "seasons": {
+    "title": "Recettes par saison",
+    "items": [
+      { "title": "Printemps", "url": "/printemps" },
+      { "title": "Été", "url": "/ete" },
+      { "title": "Automne", "url": "/automne" },
+      { "title": "Hiver", "url": "/hiver" }
+    ]
+  }
+}

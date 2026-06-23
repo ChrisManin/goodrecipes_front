@@ -2,14 +2,40 @@
 
 @theme {
   /* Couleurs */
-  --color-light-bg: #f6f5f3;
+  --color-light: #f6f5f3;
+  --color-dark-bg: #272728;
+  --color-secondary-dark-bg: #313133;
   --color-white: #ffffff;
   --color-dark-text: #1a1919;
   --color-secondary-dark-text: #656360;
   --color-primary: #c039e5;
+  --color-primary-medium: #cc68e8;
+  --color-primary-light: #d495e5;
   --color-secondary: #7a139a;
   --color-success: #00dc82;
 
+  /* Gris */
+  --color-grey-25: #F6F5F4;
+  --color-grey-35: #EFEEEB;
+  --color-grey-45: #E6E6E6;
+  --color-grey-50: #E3E1DD;
+  --color-grey-100: #DAD8D2;
+  --color-grey-200: #CFCBC4;
+  --color-grey-300: #BFBAB0;
+  --color-grey-400: #AAA497;
+  --color-grey-500: #8C8473;
+  --color-grey-600: #797163;
+  --color-grey-700: #655F53;
+  --color-grey-800: #575247;
+  --color-grey-900: #49453C;
+  --color-grey-950: #2D2A25;
+  --color-grey-975: #161512;
+
+  /* Polices */
+  --font-brandonRegular: 'Nunito', sans-serif;
+  --font-brandonMedium: 'Nunito', sans-serif;
+  --font-brandonBold: 'Nunito', sans-serif;
+  --font-openSans : 'Open Sans', sans-serif;
 
   /* Breakpoints */
   --breakpoint-mobile: 576px;
@@ -20,5 +46,13 @@
 @layer components {
   .page-container-y {
     @apply w-full mx-auto max-w-[100vw] desktop:max-w-7xl flex flex-col self-center px-0 desktop:px-2 overflow-hidden desktop:overflow-visible;
+  }
+
+  .subMenu-link {
+    @apply py-2 pl-4 border-l-2 border-grey-100 hover:bg-primary-medium/[0.4] hover:border-l-4 hover:border-l-primary hover:text-primary cursor-pointer w-full text-grey-900 flex;
+  }
+
+  .submenu-title {
+    @apply font-semibold text-xl flex items-center py-1 font-brandonRegular text-grey-900;
   }
 }
