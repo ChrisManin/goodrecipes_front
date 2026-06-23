@@ -9,11 +9,13 @@
         <MainMenu/>
       </div>
     </transition>
+    <SubMenu :display="!header.scroll && header.displaySubMenu"/>
   </header>
 </template>
 
 <script setup lang="ts">
 import { onMounted } from "vue";
+import SubMenu from "./submenu/SubMenu.vue";
 
 const { isMobile, isMobileOrTablet } = useDevice();
 

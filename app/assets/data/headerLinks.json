@@ -24,7 +24,7 @@
     ]
   },
   "difficulties": {
-    "title": "Recettes par niveua de difficulté",
+    "title": "Recettes par niveau de difficulté",
     "items": [
       { "title": "Très facile", "url": "/tres-facile" },
       { "title": "Facile", "url": "/facile" },

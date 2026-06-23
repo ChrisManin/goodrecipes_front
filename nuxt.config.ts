@@ -7,7 +7,14 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
 
-  modules: ['@nuxtjs/device', '@pinia/nuxt'],
+  modules: ['@nuxtjs/device', '@pinia/nuxt', '@nuxt/fonts'],
+
+  fonts: {
+    families: [
+      { name: 'Nunito', provider: 'google', weights: [300, 400, 600, 700, 800], styles: ['normal', 'italic'] },
+      { name: 'Open Sans', provider: 'google', weights: [300, 400, 600, 700], styles: ['normal', 'italic'] },
+    ],
+  },
 
   components: [
     { path: '~/components', pathPrefix: false }
