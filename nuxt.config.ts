@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
 
-  modules: ['@nuxtjs/device', '@pinia/nuxt', '@nuxt/fonts'],
+  modules: ['@nuxtjs/device', '@pinia/nuxt', '@nuxt/fonts', '@nuxt/image'],
 
   fonts: {
     families: [

@@ -31,10 +31,11 @@
   --color-grey-950: #2D2A25;
   --color-grey-975: #161512;
 
+  /* Or */
+  --color-gold: #B49B50;
+
   /* Polices */
-  --font-brandonRegular: 'Nunito', sans-serif;
-  --font-brandonMedium: 'Nunito', sans-serif;
-  --font-brandonBold: 'Nunito', sans-serif;
+  --font-brandon: 'Nunito', sans-serif;
   --font-openSans : 'Open Sans', sans-serif;
 
   /* Breakpoints */
@@ -44,8 +45,24 @@
 }
 
 @layer components {
+  body {
+    @apply bg-grey-25
+  }
+
+  .page-container{
+    @apply w-full mx-auto max-w-[100vw] desktop:max-w-7xl flex flex-col self-center px-[1rem] desktop:px-0
+  }
+
   .page-container-y {
     @apply w-full mx-auto max-w-[100vw] desktop:max-w-7xl flex flex-col self-center px-0 desktop:px-2 overflow-hidden desktop:overflow-visible;
+  }
+
+  .page-container-grid{
+    @apply w-full max-w-[100vw] desktop:max-w-7xl self-center px-2 grid grid-cols-12 gap-4 grid-rows-2
+  }
+
+  button.close {
+    @apply absolute right-2 top-2 z-10 before:block before:absolute before:top-[50%] before:left-[15%] before:bg-grey-500 before:h-[2px] before:w-[70%] after:block after:absolute after:top-[50%] after:left-[15%] after:bg-grey-500 after:h-[2px] after:w-[70%] before:origin-center before:rotate-45 after:-rotate-45 after:origin-center rounded-full bg-white
   }
 
   .subMenu-link {
@@ -53,6 +70,129 @@
   }
 
   .submenu-title {
-    @apply font-semibold text-xl flex items-center py-1 font-brandonRegular text-grey-900;
+    @apply font-semibold text-xl flex items-center py-1 font-brandon text-grey-900;
+  }
+
+  .home-page-block-container{
+    @apply desktop:flex desktop:justify-center
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    height: 2.25rem;
+    background-color: white;
+    color: theme('colors.grey.500');
+    white-space: nowrap;
+    border: 1px solid theme('colors.grey.500');
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    border-color: theme('colors.grey.100');
+    color: theme('colors.grey.100');
+  }
+}
+
+@layer base {
+  body {
+    color: theme('colors.grey.500') !important;
+    font-family: "Open Sans", "Sans Serif";
+  }
+  input, select, textarea {
+    @apply outline-none relative w-full max-w-full py-[calc(0.5em-1px)] px-[calc(0.75em-1px)] bg-white border border-solid border-grey-500 rounded-lg text-grey-500 inline-flex h-9 justify-start items-center;
+    box-shadow: inset 0 0.0625em 0.125em rgb(10 10 10 / 5%);
+  }
+  textarea {
+    max-height: 40em;
+    min-height: 8em;
+  }
+  input::placeholder, select::placeholder, textarea::placeholder {
+    color: theme('colors.grey.100');
+  }
+  .select {
+    position: relative;
+  }
+  .select:after {
+    border: 3px solid theme('colors.grey.500');
+    border-right: none;
+    border-top: none;
+    border-radius: 2px;
+    content: '';
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 1.125em;
+    z-index: 4;
+    height: 0.625em;
+    width: 0.625em;
+    margin-top: -0.4375em;
+    transform: rotate(-45deg);
+    transform-origin: center;
+  }
+  .select > select {
+    appearance: none;
+  }
+  label .required {
+    color: theme('colors.gold');
+  }
+  .block-content {
+    margin-bottom: 30px;
+  }
+
+  .no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .no-border-bottom {
+    border-bottom: none;
+  }
+
+  .bg-email {
+    background-color: theme('colors.grey.100');
+  }
+
+  .description-widget iframe{
+    height: auto;
+    width: auto;
+  }
+
+  .aroundme-seo p{
+    text-align: justify;
+  }
+
+  button[disabled]{
+    cursor: not-allowed;
+  }
+  .load-wraper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(211,211,211);
+    overflow: hidden;
+  }
+  .activity{
+    position: absolute;
+    left: -45%;
+    height: 100%;
+    width: 45%;
+    background-image: linear-gradient(to left, rgba(251,251,251, .05), rgba(251,251,251, .3), rgba(251,251,251, .6), rgba(251,251,251, .3), rgba(251,251,251, .05));
+    background-image: -moz-linear-gradient(to left, rgba(251,251,251, .05), rgba(251,251,251, .3), rgba(251,251,251, .6), rgba(251,251,251, .3), rgba(251,251,251, .05));
+    background-image: -webkit-linear-gradient(to left, rgba(251,251,251, .05), rgba(251,251,251, .3), rgba(251,251,251, .6), rgba(251,251,251, .3), rgba(251,251,251, .05));
+    animation: loading 1s infinite;
+  }
+  @keyframes loading {
+    0%{
+      left: -45%;
+    }
+    100%{
+      left: 100%;
+    }
   }
 }
